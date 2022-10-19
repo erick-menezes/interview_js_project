@@ -1,10 +1,14 @@
 /**
  * Fetch the url data and returns a promise.
  * 
- * @param {string} url - The url to fetch the data.
+ * @param {string} urls - The url to fetch the data.
  * 
- * @returns A promise.
+ * @returns A promise with the request data.
  */
-export async function fetchData(url) {
-    return fetch(url).then(response => response.json());
+export async function fetchData(...urls) {
+    const response = await Promise.all(
+        urls.map(url => fetch(url).then(response => response.json()))
+    ).then((data) => data);
+
+    return response;
 }

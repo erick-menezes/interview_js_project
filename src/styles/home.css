@@ -12,6 +12,7 @@ h2 {
 
 .code-snippet {
     background: var(--gray-400);
+
     width: 100%;
     height: 100%;
     max-width: 1300px;
@@ -19,12 +20,18 @@ h2 {
     margin: auto;
 
     border-radius: 10px;
+
+    padding-top: 1rem;
     
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .code-snippet pre {
     font-family: 'Consolas';
+
+    padding-left: 1.5rem;
+    white-space: pre-wrap;
 }
 
 ::-webkit-scrollbar {
@@ -38,12 +45,14 @@ h2 {
 }
    
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    /* background: #888; */
+    background: var(--blue-500);
     border-radius: 10px;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    /* background: #555;  */
+    background: var(--blue-600);
 }
 
 .copy-button {
@@ -93,6 +102,18 @@ h2 {
     padding-bottom: 2rem;
 }
 
+.error-message-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.error-message {
+    font-size: 28;
+    font-weight: bold;
+    color: var(--red);
+}
+
 .user-card {
     cursor: pointer;
 
@@ -118,6 +139,18 @@ h2 {
     text-align: center;
 }
 
+.user-card .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .user-card p b {
     font-weight: bold;
+}
+
+@media(max-width: 1024px) {
+    .result-block {
+        grid-template-columns: 1fr;
+    }
 }

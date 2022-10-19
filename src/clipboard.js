@@ -1,8 +1,12 @@
+/**
+ * Copies the content inside the element selected.
+ *  
+ * @param {string} elementToCopy - The querySelector (class, id, etc.) of the element that will have its content copied.
+ * @param {string} buttonElement  - The querySelector (class, id, etc.) of the button that will trigger the action.
+ */
 export function copyToClipboard(elementToCopy, buttonElement) {
     const clipboardButton = document.querySelector(buttonElement);
     const copyableArea = document.querySelector(elementToCopy);
-
-    console.log('veio pra cá!');
 
     navigator.clipboard.writeText(copyableArea.textContent);
         
