@@ -1,0 +1,18 @@
+{
+  "license": "ISC",
+  "author": "Erick Menezes Silva",
+  "name": "interview_js_project",
+  "version": "1.0.0",
+  "description": "Project made to an interview Javascript test.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "http-server ./ -o /public/",
+    "test": "test"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.2.1"
+  }
+}

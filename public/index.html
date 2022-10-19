@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>JSONPlaceholder API Test Page</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles/global.css" />
+    <link rel="stylesheet" href="../src/styles/home.css" />
+</head>
+<body>
+    <div id="root">
+        <h1>Letter API</h1>
+
+        <h2>Request object</h2>
+        
+        <div class="code-snippet"></div>
+        
+        <button class="copy-button" type="button">
+            <object data="../src/assets/copy.svg" width="300" height="300"></object>
+            Copy to clipboard
+        </button>
+        
+        <h2>Result</h2>
+
+        <div class="result-block"></div>
+    </div>
+
+    <script type="module" src="../src/clipboard.js"></script>
+    <script type="module" src="../src/index.js"></script>
+</body>
+</html>

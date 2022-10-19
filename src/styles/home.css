@@ -1,0 +1,123 @@
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin: 2rem 0;
+}
+
+h2 {
+    margin: 3rem 0;
+}
+
+.code-snippet {
+    background: var(--gray-400);
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    max-height: 600px;
+    margin: auto;
+
+    border-radius: 10px;
+    
+    overflow: scroll;
+}
+
+.code-snippet pre {
+    font-family: 'Consolas';
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--gray-100);
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--gray-100);
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.copy-button {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: medium;
+    font-size: 16px;
+
+    background: var(--blue-500);
+    color: var(--white);
+    
+    transition: background .2s;
+}
+
+.copy-button:hover {
+    background: var(--blue-600);
+}
+
+.copy-button object {
+    color: white;
+    width: 23px;
+    height: 23px;
+}
+
+.result-block {
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+
+    padding-bottom: 2rem;
+}
+
+.user-card {
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+
+    background: var(--gray-400);
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+
+    transition: box-shadow .2s;
+}
+
+.user-card:hover {
+    box-shadow: #4A7EE1 -10px 10px, #618EE8 -20px 20px;
+}
+
+.user-card h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.user-card p b {
+    font-weight: bold;
+}
