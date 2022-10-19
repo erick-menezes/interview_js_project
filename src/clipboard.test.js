@@ -1,4 +1,3 @@
-// import { fireEvent, queryByTestId } from '@testing-library/dom'
 import { fireEvent, getByText } from '@testing-library/dom';
 
 import '@testing-library/jest-dom/extend-expect';
