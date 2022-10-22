@@ -1,6 +1,6 @@
 # Letter API Project
 
-User listing API project made using the **JSONPlaceholder API**.
+User listing API project made using the **[JSONPlaceholder API](http://jsonplaceholder.typicode.com/)**.
 
 ## Technologies used
 
